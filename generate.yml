@@ -2,7 +2,7 @@
 - hosts: remotes
   user: root
   vars:
-    - sosreport_path: "{{ SOSREPORT_PATH|default('/root') }}"
+    - sosreport_path: "{{ SOSREPORT_PATH|default('/tmp') }}"
     - tmp_dir: /var/tmp
     - hosts_path: "{{ HOSTS_PATH|default('/root/ansible/hosts') }}"
   tasks:
