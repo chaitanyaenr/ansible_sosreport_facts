@@ -9,10 +9,13 @@ You need to have these installed on your host
 ### Run
 $ ansible-playbook -i hosts generate.yml
 
-## variables
+### variables
 
 SOSREPORT_PATH - Directory to save results
+
 HOSTS_PATH - Inventory file path
 
-You can ovveride the variables like
+### override
+You can override the variables like
+
 $ ansible-playbook --extra-vars '{"HOSTS_PATH":"/tmp/hosts"}' generate.yml
