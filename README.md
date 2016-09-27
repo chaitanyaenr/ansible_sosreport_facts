@@ -7,8 +7,9 @@ You need to have these installed on your host
    - python
 
 ### Run
+```
 $ ansible-playbook -i hosts generate.yml
-
+```
 ### variables
 
 SOSREPORT_PATH - Directory to save results
@@ -17,9 +18,9 @@ HOSTS_PATH - Inventory file path
 
 ### override
 You can override the variables like
-
+```
 $ ansible-playbook --extra-vars '{"HOSTS_PATH":"/tmp/hosts"}' generate.yml
-
+```
 ### Example output
 
 ```
