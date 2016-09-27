@@ -4,7 +4,7 @@
   vars:
     - sosreport_path: "{{ SOSREPORT_PATH|default('/tmp') }}"
     - tmp_dir: /var/tmp
-    - hosts_path: "{{ HOSTS_PATH|default('/root/ansible/hosts') }}"
+    - hosts_path: "{{ HOSTS_PATH|default('/etc/ansible/hosts') }}"
   tasks:
     - name: Install sos via dnf
       dnf: name={{ item }} state=latest
