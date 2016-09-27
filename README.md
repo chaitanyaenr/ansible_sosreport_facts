@@ -41,22 +41,22 @@ changed: [host -> localhost
 TASK [results directory] *******************************************************
 changed: [host.example.com -> localhost]
 
-TASK [c] ***********************************************************************
+TASK [register timestamp] ***********************************************************************
 changed: [host.example.com]
 
-TASK [sync] ********************************************************************
+TASK [create directory to store reults] ********************************************************************
 changed: [host.example.com -> localhost]
 
-TASK [see that dir is empty] ***************************************************
+TASK [see that directory doesn't have any files] ***************************************************
 changed: [host.example.com]
 
 TASK [Run sosreport] ***********************************************************
 changed: [host.example.com]]
 
 TASK [Sync the results from remote] ********************************************
-changed: [host.example.com]
+changed: [host.example.com]`
 
-TASK [Delete the results] ******************************************************
+TASK [Delete the results on remotes] ******************************************************
 changed: [host.example.com]
 
 TASK [Create dir for ansible_facts] ********************************************
