@@ -27,45 +27,45 @@ $ ansible-playbook --extra-vars '{"HOSTS_PATH":"/tmp/hosts"}' generate.yml
 PLAY [test] ********************************************************************
 
 TASK [setup] *******************************************************************
-ok: [dhcp31-3.perf.lab.eng.bos.redhat.com]
+ok: [host.example.com]
 
 TASK [Install sos via dnf] *****************************************************
-ok: [dhcp31-3.perf.lab.eng.bos.redhat.com] => (item=[u'sos', u'rsync', u'ansible'])
+ok: [host.example.com] => (item=[u'sos', u'rsync', u'ansible'])
 
 TASK [Install sos via yum] *****************************************************
-skipping: [dhcp31-3.perf.lab.eng.bos.redhat.com] => (item=[]) 
+skipping: [host.example.com] => (item=[]) 
 
 TASK [Install rsync on local] **************************************************
-changed: [dhcp31-3.perf.lab.eng.bos.redhat.com -> localhost]
+changed: [host -> localhost
 
 TASK [results directory] *******************************************************
-changed: [dhcp31-3.perf.lab.eng.bos.redhat.com -> localhost]
+changed: [host.example.com -> localhost]
 
 TASK [c] ***********************************************************************
-changed: [dhcp31-3.perf.lab.eng.bos.redhat.com]
+changed: [host.example.com]
 
 TASK [sync] ********************************************************************
-changed: [dhcp31-3.perf.lab.eng.bos.redhat.com -> localhost]
+changed: [host.example.com -> localhost]
 
 TASK [see that dir is empty] ***************************************************
-changed: [dhcp31-3.perf.lab.eng.bos.redhat.com]
+changed: [host.example.com]
 
 TASK [Run sosreport] ***********************************************************
-changed: [dhcp31-3.perf.lab.eng.bos.redhat.com]
+changed: [host.example.com]]
 
 TASK [Sync the results from remote] ********************************************
-changed: [dhcp31-3.perf.lab.eng.bos.redhat.com]
+changed: [host.example.com]
 
 TASK [Delete the results] ******************************************************
-changed: [dhcp31-3.perf.lab.eng.bos.redhat.com]
+changed: [host.example.com]
 
 TASK [Create dir for ansible_facts] ********************************************
-changed: [dhcp31-3.perf.lab.eng.bos.redhat.com -> localhost]
+changed: [host.example.com -> localhost]
 
 TASK [Collect ansible_facts] ***************************************************
-changed: [dhcp31-3.perf.lab.eng.bos.redhat.com -> localhost]
+changed: [host.example.com -> localhost]
 
 PLAY RECAP *********************************************************************
-dhcp31-3.perf.lab.eng.bos.redhat.com : ok=12   changed=10   unreachable=0    failed=0
+host.example.com : ok=12   changed=10   unreachable=0    failed=0
 
 ```
