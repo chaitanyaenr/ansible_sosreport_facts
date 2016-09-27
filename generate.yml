@@ -27,7 +27,7 @@
     - name: register timestamp
       action: shell date '+%F.%H:%M:%S'
       register: mydate
-    - name: create directory to store reults
+    - name: create directory to store results
       local_action: shell mkdir -p {{ sosreport_path }}/results-{{ mydate.stdout }}/{{ ansible_hostname}}
     - name: see that directory doesn't have any files
       shell: cd "{{ tmp_dir }}" && /bin/rm -rf *
